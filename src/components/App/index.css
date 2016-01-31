@@ -1,0 +1,21 @@
+.app {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  width: calc(100% - 20px);
+  max-width: 1024px;
+}
+.header {
+  color: white;
+  background: steelblue;
+  background-image: linear-gradient(rgb(94, 154, 203),steelblue);
+  padding: 16px;
+}
+.title {
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.absolute {
+  position: absolute;
+}
