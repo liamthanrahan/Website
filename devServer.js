@@ -12,22 +12,16 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, 'dev.html'));
-});
-app.get('/index.html', function(req, res) {
-  res.sendFile(path.join(__dirname, 'dev.html'));
-});
+// send all requests to index.html so browserHistory works
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'))
+})
 
-app.get('/:type/*', function(req, res) {
-  res.redirect('http://localhost:3000/#!' + req.path);
-});
-
-app.listen(3000, 'localhost', function(err) {
+var PORT = process.env.PORT || 3000
+app.listen(PORT, 'localhost', function(err) {
   if (err) {
     console.log(err);
-    return;
+  } else {
+  	console.log('Listening at http://localhost:' + PORT);
   }
-
-  console.log('Listening at http://localhost:3000');
 });

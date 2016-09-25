@@ -21,13 +21,13 @@ config.plugins = [
 
 config.module.loaders.push({
   test: /\.css$/,
-  exclude: path.join(__dirname, 'node_modules'),
+  exclude: [path.join(__dirname, 'node_modules')],
   loaders: ['style','css?modules&localIdentName=[path][name]---[local]---[hash:base64:5]','postcss']
 })
 
 config.module.loaders.push({
   test: /\.css$/,
-  include: path.join(__dirname, 'node_modules'),
+  include: [path.join(__dirname, 'node_modules')],
   loaders: ['style','css']
 })
 

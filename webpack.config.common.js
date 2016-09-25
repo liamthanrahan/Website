@@ -27,7 +27,7 @@ module.exports = {
     }]
   },
   resolve: {
-    modulesDirectories: ['web_modules', 'node_modules', 'src', 'src/components', 'data', 'images', 'js']
+    modulesDirectories: ['web_modules', 'node_modules', 'src', 'src/components', 'data', 'images', 'scripts']
   },
   postcss: function() {
     return [
