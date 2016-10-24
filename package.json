@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "Liam Hanrahan's Personal Website",
   "scripts": {
-    "clean": "rimraf dist",
-    "build:cp": "cp index.html dist/index.html",
+    "clean": "rimraf public",
+    "build:cp": "cp index.html public/index.html",
     "build": "npm run clean && npm run build:cp",
-    "start": "webpack && node server.js",
-    "dev": "webpack-dev-server --inline --content-base . --history-api-fallback",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base . --history-api-fallback",
+    "start:prod": "webpack && node server.js",
     "lint": "eslint src",
-    "deploy": "aws s3 sync dist s3://liamhanrahansite --acl public-read --exclude \"*.json\" && aws s3 sync dist s3://liamthanrahan --acl public-read --include \"*.json\" --content-type \"application/json\""
+    "deploy": "aws s3 sync public s3://liamhanrahansite --acl public-read --exclude \"*.json\" && aws s3 sync public s3://liamthanrahan --acl public-read --include \"*.json\" --content-type \"application/json\""
   },
   "repository": {
     "type": "git",

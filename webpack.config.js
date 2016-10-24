@@ -5,11 +5,15 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: 'dist',
+    path: 'public',
     filename: 'index.js',
     publicPath: '/'
   },
-  plugins: [],
+  plugins: process.env.NODE_ENV === 'production' ? [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin()
+  ] : [],
   module: {
     loaders: [{
       test: /\.js$/,
