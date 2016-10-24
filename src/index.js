@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
 import { compose, createStore, applyMiddleware, combineReducers } from 'redux'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
@@ -11,7 +11,7 @@ import Code from './pages/Code'
 import Example from './pages/Example'
 import Home from './pages/Home'
 
-ReactDOM.render((
+render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>

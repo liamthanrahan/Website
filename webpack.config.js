@@ -1,21 +1,19 @@
 var path = require('path');
-var webpack = require('webpack');
 
 module.exports = {
-  devtool: 'eval',
   entry: [
-    './src/index'
+    './src/index.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: 'dist',
     filename: 'index.js',
-    publicPath: ''
+    publicPath: '/'
   },
   plugins: [],
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['babel'],
+      loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
       include: path.join(__dirname, 'src')
     },{
       test: /\.(json|csv|png|jpg|svg)$/,

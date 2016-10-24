@@ -4,9 +4,7 @@ import classnames from 'classnames'
 import p from 'parallax.min.js'
 
 
-export class ParallaxExample extends Component {
-  state = {
-  }
+export default class ParallaxExample extends Component {
   componentDidMount(){
     let parallax = new Parallax(this.refs.scene);
   }

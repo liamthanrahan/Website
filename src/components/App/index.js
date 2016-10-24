@@ -6,8 +6,6 @@ import NavigationLink from 'NavigationLink'
 
 
 export class App extends Component {
-  state = {
-  }
   componentDidMount(){
   }
   render(){
