@@ -13,7 +13,7 @@ export default class extends Component {
         <ul>
           <li>
             <Link to="/code/parallax">
-              <div className={styles.example}><Parallax /></div>
+              <div className={styles.example}>Parallax</div>
             </Link>
           </li>
         </ul>
