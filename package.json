@@ -10,7 +10,7 @@
     "start:dev": "webpack-dev-server --inline --content-base . --history-api-fallback",
     "start:prod": "webpack && node server.js",
     "lint": "eslint src",
-    "deploy": "aws s3 sync public s3://liamhanrahansite --acl public-read --exclude \"*.json\" && aws s3 sync public s3://liamthanrahan --acl public-read --include \"*.json\" --content-type \"application/json\""
+    "deploy": "aws s3 sync public s3://liamhanrahan.com --acl public-read"
   },
   "repository": {
     "type": "git",
