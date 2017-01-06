@@ -16,8 +16,8 @@ render((
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/code" component={Code}/>
-      <Route path="/code/:name" component={Example}/>
       <Route path="/about" component={About}/>
     </Route>
+    <Route path="/code/:name" component={Example}/>
   </Router>
 ), document.getElementById('root'));

@@ -1,0 +1,47 @@
+.container {
+  margin-top: 100px;
+}
+
+.header {
+  background: silver;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.title {
+  text-align: center;
+}
+
+.navigation {
+  list-style: none;
+  li {
+    background-color: red;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+}
+
+.fullpage {
+  height: 100%;
+  width: 100%;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.link {
+  background: rgba(255, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import Parallax from 'ParallaxExample'
+import NavigationLink from 'components/NavigationLink'
 
 import styles from './index.css'
 
@@ -12,9 +12,7 @@ export default class extends Component {
         <h2>Code Examples</h2>
         <ul>
           <li>
-            <Link to="/code/parallax">
-              <div className={styles.example}>Parallax</div>
-            </Link>
+            <NavigationLink to="/code/parallax">Parallax</NavigationLink>
           </li>
         </ul>
       </div>
