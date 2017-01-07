@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NavigationLink from 'components/NavigationLink'
+import { Link } from 'react-router'
 import Parallax from 'ParallaxExample'
 import styles from './index.css'
 
@@ -19,7 +19,7 @@ export default class extends Component {
       <div className={styles.fullpage}>
         <div className={styles.topright}>
           <div className={styles.link}>
-            <NavigationLink to="/code">Back</NavigationLink>
+            <Link to="/code">Back</Link>
           </div>
         </div>
         {example}

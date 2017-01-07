@@ -17,10 +17,12 @@ export default class App extends Component {
             <li><NavigationLink to="/" onlyActiveOnIndex>Home</NavigationLink></li>
             <li><NavigationLink to="/code">Code Examples</NavigationLink></li>
             <li><NavigationLink to="/about">About</NavigationLink></li>
-            <li><a href="https://www.liamthanrahan.wordpress.com">Creative Writing Blog</a></li>
+            <li><a className={styles.externalLink} href="https://www.liamthanrahan.wordpress.com">Creative Writing Blog</a></li>
           </ul>
         </div>
-        {this.props.children}
+        <div className={styles.content}>
+          {this.props.children}
+        </div>
       </div>
     )
   }

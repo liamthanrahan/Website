@@ -3,8 +3,12 @@ import { Link } from 'react-router'
 
 import styles from './index.css'
 
-export default class extends Component {
+class NavigationLink extends Component {
   render() {
-    return <Link {...this.props} activeClassName={styles.active}/>
+    return <Link {...this.props}
+      className={styles.link}
+      activeClassName={styles.active} />
   }
 }
+
+export default NavigationLink
