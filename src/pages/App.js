@@ -12,7 +12,7 @@ export default class App extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Liam's Personal Website</h1>
+          <h1 className={styles.title}>Liam Hanrahan</h1>
           <ul role="nav" className={styles.navigation}>
             <li><NavigationLink to="/" onlyActiveOnIndex>Home</NavigationLink></li>
             <li><NavigationLink to="/code">Code Examples</NavigationLink></li>

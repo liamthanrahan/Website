@@ -8,7 +8,7 @@ export default class extends Component {
   render() {
     return (
       <div>
-        <h2>Code Examples</h2>
+        <h1>Code Examples</h1>
         <ul>
           <li>
             <Link to="/code/parallax">Parallax</Link>

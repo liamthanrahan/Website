@@ -5,11 +5,11 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import './index.css'
 
-import About from './pages/About'
-import App from './pages/App'
-import Code from './pages/Code'
-import Example from './pages/Example'
-import Home from './pages/Home'
+import App from './pages/app'
+import About from './pages/about'
+import Code from './pages/code'
+import Example from './pages/example'
+import Home from './pages/home'
 
 render((
   <Router history={browserHistory}>
