@@ -1,7 +1,10 @@
 html,
-body {
+body,
+#root {
 	background: #f8f8f8;
-	font-family: roboto;
+	/*font-family: roboto;*/
+  font-family: 'Roboto', sans-serif;
+	
 	height: 100%;
 }
 

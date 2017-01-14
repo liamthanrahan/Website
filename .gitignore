@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 npm-debug.log
-dist
+public
 rawdata
 .gitold
 coverage
+npm-debug.log*
